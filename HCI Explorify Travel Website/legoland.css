@@ -1,0 +1,245 @@
+
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f4f4f4;
+  padding: 10px 20px;
+}
+
+.header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  padding: 8px 15px;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav a:hover {
+  background-color: #e0e0e0;
+}
+
+.nav .button {
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: 2px solid transparent;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav .button.signin {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.nav .button.signin:hover {
+  background-color: #666;
+  color: #fff;
+}
+
+.nav .button.register {
+  background-color: #333;
+  color: #fff;
+}
+
+.nav .button.register:hover {
+  background-color: #fff;
+  color: #333;
+  border-color: #333;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 300px; /* Adjust height as needed */
+  background: url('legoland.jpg') center/cover no-repeat; /* Replace with the correct image filename */
+  color: rgb(0, 0, 0);
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Add some depth for readability */
+}
+
+.hero p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Travel Deals Section */
+.travel-deals {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.travel-deals h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.travel-deals .deals {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Deal Box */
+/* Deal Box with Hover Effect */
+.deal {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  height: 100%;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover Effect */
+.deal:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  background-color: #eaeaea; /* Optional: Slightly darker background on hover */
+}
+
+/* Dark Deal Box (Family Deal) */
+.deal.dark {
+  background: #333;
+  color: white;
+}
+
+.deal.dark:hover {
+  background-color: #444; /* Slightly lighter shade for hover */
+}
+
+.deal h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.deal .price {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.deal ul {
+  list-style: disc;
+  margin: 0;
+  padding: 0 0 15px 20px;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.deal button {
+  margin-top: auto;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.deal button:hover {
+  background: #555;
+}
+.deal .price {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333; /* Default for light cards */
+}
+
+.deal.dark .price {
+  color: white; /* Adjusted for dark cards */
+}
+
+/* Footer Section */
+.footer {
+  background: #f4f4f4;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 0 10px;
+}
+
+.footer-section h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #555;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #333;
+}
+
+/* Logo Styles */
+.logo a {
+  text-decoration: none; /* Removes underline */
+  color: black; /* Ensures the text color matches the design */
+  font-size: 1.5rem; /* Adjust font size */
+  font-weight: bold;
+}
+
+.logo a:hover {
+  color: #555; /* Adds a hover effect */
+}

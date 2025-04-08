@@ -1,0 +1,291 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f4f4f4;
+  padding: 10px 20px;
+}
+
+.header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  padding: 8px 15px;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav a:hover {
+  background-color: #e0e0e0;
+}
+
+.nav .button {
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: 2px solid transparent;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav .button.signin {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.nav .button.signin:hover {
+  background-color: #666;
+  color: #fff;
+}
+
+.nav .button.register {
+  background-color: #333;
+  color: #fff;
+}
+
+.nav .button.register:hover {
+  background-color: #fff;
+  color: #333;
+  border-color: #333;
+}
+
+/* Filters and Results Section */
+.filters-and-results {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Filters Section */
+.filters {
+  width: 20%;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.filters h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.filters span {
+  display: inline-flex;
+  align-items: center;
+  background: #e0e0e0;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 15px;
+  font-size: 0.9rem;
+}
+
+.filters span button {
+  background: none;
+  border: none;
+  margin-left: 5px;
+  color: #555;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+.filters span button:hover {
+  color: #333;
+}
+
+.filters input[type="range"] {
+  width: 100%;
+}
+
+.filters label {
+  display: block;
+  margin: 10px 0;
+  font-size: 0.9rem;
+}
+
+/* Search Bar Section */
+.search-bar-container {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-bar {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.search-btn {
+  padding: 10px 15px;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.search-btn:hover {
+  background: #555;
+}
+
+.search-filters {
+  display: flex;
+  gap: 10px;
+}
+
+.search-filters .filter {
+  padding: 8px 15px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.search-filters .filter.active {
+  background-color: #333;
+  color: #fff;
+}
+
+.search-filters .filter:hover {
+  background-color: #e0e0e0;
+}
+
+/* Search Results Section */
+.search-results,
+.plans {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Align with three columns like above */
+  grid-template-rows: repeat(2, auto); /* Two rows */
+  gap: 20px;
+  width: 100%; /* Ensure it spans the same width */
+  margin: 0 auto; /* Center the grid layout */
+}
+
+.search-results-container {
+  flex: 1; /* Make the container flexible to fill space */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Destination Options Section */
+.destination {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: left;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 350px;
+}
+
+.destination:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+.destination a {
+  text-decoration: none; /* Removes underline */
+  color: black; /* Sets text color to black */
+}
+
+.destination a:hover {
+  color: black; /* Ensures the text stays black on hover */
+}
+
+.destination img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.destination h4, .destination p {
+  margin: 5px 0;
+  padding-left: 5px;
+}
+.recommended-plans h2 {
+  text-align: center;
+  margin-bottom: 20px; /* Add spacing below the title */
+  font-size: 1.8rem; /* Optional: Adjust font size for emphasis */
+}
+
+/* Footer Section */
+.footer {
+  background: #f4f4f4;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.footer-section h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #555;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #333;
+}
+/* Logo Styles */
+.logo a {
+  text-decoration: none; /* Removes underline */
+  color: black; /* Ensures the text color matches the design */
+  font-size: 1.5rem; /* Adjust font size */
+  font-weight: bold;
+}
+
+.logo a:hover {
+  color: #555; /* Adds a hover effect */
+}

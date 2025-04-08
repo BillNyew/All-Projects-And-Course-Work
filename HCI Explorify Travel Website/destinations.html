@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - Explorify</title>
+    <link rel="stylesheet" href="destinations.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">
+            <a href="homepage.html">Explorify</a>
+        </div>
+        <nav class="nav">
+            <a href="destinations.html" class="button">Destinations</a>
+            <a href="destinations.html" class="button">Transportation</a>
+            <a href="destinations.html" class="button">Events</a>
+            <a href="#resources" class="button">Resources</a>
+            <a href="#help" class="button">Help</a>
+            <a href="#signin" class="button signin">Sign in</a>
+            <a href="#register" class="button register">Register</a>
+        </nav>
+    </header>
+
+    <!-- Filters and Destination Section -->
+    <section class="filters-and-results">
+        <!-- Filter Section -->
+        <div class="filters">
+            <h4>Keywords</h4>
+            <div class="keywords">
+                <span>Family Friendly</span>
+                <span>Room Service</span>
+                <span>Pool</span>
+            </div>
+            <div class="checkbox-filters">
+                <label><input type="checkbox" checked> Near Me</label>
+                <label><input type="checkbox" checked> Hotel Included</label>
+                <label><input type="checkbox" checked> Family Package</label>
+            </div>
+            <h4>Label</h4>
+            <input type="range" min="1" max="5" step="1">
+            <h4>Search Filters</h4>
+            <label><input type="checkbox" checked> Resort</label>
+            <label><input type="checkbox" checked> Transportation</label>
+            <label><input type="checkbox" checked> Events</label>
+            <h4>Location</h4>
+            <label><input type="checkbox" checked> Europe</label>
+            <label><input type="checkbox" checked> Asia</label>
+            <label><input type="checkbox" checked> North America</label>
+        </div>
+        
+        <!-- Search Bar and Results Section -->
+        <div class="search-results-container">
+            <div class="search-bar-container">
+                <input type="text" class="search-bar" placeholder="Search">
+                <button class="search-btn">Search</button>
+                <div class="search-filters">
+                    <div class="filter active">New</div>
+                    <div class="filter">Price Ascending</div>
+                    <div class="filter">Price Descending</div>
+                    <div class="filter">Rating</div>
+                </div>
+            </div>
+            <div class="search-results">
+                <div class="destination">
+                    <a href="legoland.html" class="destination-link">
+                    
+                        <img src="legoland.jpg" alt="Legoland">
+                    
+                        <h4>Legoland-Anaheim (Family)</h4>
+                    
+                        <p>$9,450</p>
+                    </a>
+                </div>
+                <div class="destination">
+                    <a href="paris.html" class="destination-link">
+                        <img src="paris.jpg" alt="Paris">
+                        <h4>Paris, France (Family)</h4>
+                        <p>$10,340</p>
+                    </a>
+                </div>
+                <div class="destination">
+                    <a href="disneyland.html" class="destination-link">
+                        <img src="disneyland.jpg" alt="Disney Land">
+                        <h4>Disney Land-Tokyo (Family)</h4>
+                        <p>$11,345</p>
+                    </a>
+                </div>
+                <div class="destination">
+                    <a href="tokyo.html" class="destination-link">
+                        <img src="tokyo.jpg" alt="Tokyo">
+                        <h4>Tokyo, Japan (Family)</h4>
+                        <p>$11,345</p>
+                    </a>
+                </div>
+                <div class="destination">
+                    <a href="seoul.html" class="destination-link">
+                        <img src="seoul.jpg" alt="Seoul">
+                        <h4>Seoul, South Korea (Family)</h4>
+                        <p>$6,980</p>
+                    </a>
+                </div>
+                <div class="destination">
+                    <a href="madrid.html" class="destination-link">
+                        <img src="madrid.jpg" alt="Madrid">
+                        <h4>Madrid, Spain (Family)</h4>
+                        <p>$9,239</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommended Plans Section -->
+    <section class="recommended-plans">
+        <h2>Recommended Plans</h2>
+        <div class="plans">
+            <div class="destination">
+                <a href="dubai.html" class="destination-link">
+                    <img src="dubai.jpg" alt="Dubai">
+                    <h4>Dubai, UAE (Family)</h4>
+                    <p>$12,450</p>
+                </a>
+            </div>
+            <div class="destination">
+                <a href="newyork.html" class="destination-link">
+                    <img src="newyork.jpg" alt="New York">
+                    <h4>New York, USA (Family)</h4>
+                    <p>$6,365</p>
+                </a>
+            </div>
+            <div class="destination">
+                <a href="osaka.html" class="destination-link">
+                    <img src="osaka.jpg" alt="Osaka">
+                    <h4>Osaka, Japan (Family)</h4>
+                    <p>$7,230</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-section">
+            <h4>Explore</h4>
+            <ul>
+                <li><a href="#">Travel Now</a></li>
+                <li><a href="#">Book Transportation</a></li>
+                <li><a href="#">Find Events Near Me</a></li>
+                <li><a href="#">Find Recommendations</a></li>
+                <li><a href="#">Trending Destinations</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Resources</h4>
+            <ul>
+                <li><a href="#">Packaging Information</a></li>
+                <li><a href="#">Ticket Information</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
