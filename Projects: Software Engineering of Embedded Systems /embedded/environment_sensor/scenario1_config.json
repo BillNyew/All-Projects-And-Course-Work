@@ -1,0 +1,8 @@
+{
+  "environment_sensor1": {
+    "sampling_rate": 500,
+    "enable_debug": "true",
+    "light_threshold": 800,
+    "fire_threshold": 55.0
+  }
+}

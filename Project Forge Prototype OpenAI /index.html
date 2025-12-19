@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Forge</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">
+      <a href="index.html" class="active"><img src="Forge_logo.png" alt="Forge Logo" class="logo-img" /></a>
+    </div>
+    <nav class="nav">
+      <a href="index.html" class="home-btn">Home</a>
+      <a href="features.html">Features</a>
+      <a href="investor.html">Investors</a>
+      <a href="comingsoon.html">Coming Soon</a>
+      <a href="subscription.html">Subscription</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero hero-index">
+    <div class="hero-bg"></div>
+   
+    <!-- (Optional) Add an AI-generated hero image for men & veterans support here -->
+    <div class="hero-slogan">
+      <span class="hero-forge">FORGE</span>
+      <span class="hero-subtext">Built for Men. Especially Veterans.</span>
+    </div>
+    <p>
+      Welcome to Forge—a safe, stigma-free space designed for men who often go unheard, especially veterans who deserve better mental health support. Here, your struggles are valid, your story matters, and help is just a conversation away.
+    </p>
+    <a href="#" class="btn-primary btn-on-primary" id="startJaxChat">Start Talking to Jax</a>
+
+  </section>
+ 
+    <!-- CORE FEATURES QUICK ACCESS -->
+<section class="topics-grid" style="max-width:1400px; margin: 40px auto 20px auto;">
+  <!-- Programs Button -->
+  <a href="programs.html" class="topic-card" style="text-decoration: none;">
+    <h3>Programs</h3>
+    <p>AI-guided self-improvement courses designed for men and veterans—build resilience, confidence, and healthy routines at your own pace.</p>
+  </a>
+  <!-- Community Button -->
+  <a href="community.html" class="topic-card" style="text-decoration: none;">
+    <h3>Community</h3>
+    <p>Anonymous, supportive forums and groups. Share your story, connect with others, and join local or virtual meetups in a judgment-free space.</p>
+  </a>
+  <!-- Therapists Button -->
+  <a href="therapists.html" class="topic-card" style="text-decoration: none;">
+    <h3>Therapists</h3>
+    <p>Get matched with counselors who understand men’s and veterans’ issues. Flexible options: text, voice, or video—your privacy is our priority.</p>
+  </a>
+
+
+  </section>
+  <!-- STATISTICS SECTION -->
+  <section class="topics-grid" style="max-width:900px; margin:40px auto;">
+    <div class="topic-card">
+      <h3>1 in 4</h3>
+      <p>Men experience mental health challenges each year <span style="font-size:0.9em;color:#aaa;">(NIMH)</span></p>
+    </div>
+    <div class="topic-card">
+      <h3>70%</h3>
+      <p>Of veterans report feeling isolated after service <span style="font-size:0.9em;color:#aaa;">(VA)</span></p>
+    </div>
+    <div class="topic-card">
+      <h3>2x</h3>
+      <p>Men are twice as likely not to seek help <span style="font-size:0.9em;color:#aaa;">(CDC)</span></p>
+    </div>
+  </section>
+
+  <!-- VALUE PROPOSITION -->
+  <section class="long-section alt-bg">
+    <h2>Why Forge?</h2>
+    <ul>
+      <li>Made by men, for men—especially those who have served</li>
+      <li>Anonymous, confidential, and always open</li>
+      <li>Backed by research, built for community</li>
+    </ul>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="long-section">
+    <h2>How Forge Works</h2>
+    <ul>
+      <li><strong>Jax, your private AI companion:</strong> Get support 24/7—no judgment, no stigma.</li>
+      <li><strong>Men’s Groups & Forums:</strong> Share anonymously and connect with men who “get it.”</li>
+      <li><strong>Find Therapists for Men & Vets:</strong> Book with real professionals, online or in person.</li>
+    </ul>
+  </section>
+
+  <!-- (Optional) TESTIMONIALS SECTION -->
+  <section class="primary-section">
+    <h2>Real Stories</h2>
+    <blockquote>“Forge helped me finally open up about my PTSD.”</blockquote>
+    <blockquote>“The men’s group made me realize I’m not alone.”</blockquote>
+  </section>
+
+  <!-- CHAT MODAL (Hidden by default, shown with JS) -->
+  <div class="chat-overlay" id="chatOverlay" style="display:none;">
+    <div class="chat-window">
+      <div class="chat-header">
+        <span class="logo">Forge</span>
+        <span class="chat-title">Chat with Jax</span>
+        <button class="close-chat" id="closeChatBtn">×</button>
+      </div>
+      <div class="chat-body">
+        <p>Hello! I'm <strong>Jax</strong>, your AI companion. What would you like to talk about today?</p>
+      </div>
+      <div class="chat-footer">
+        <input type="text" placeholder="Type a message..." />
+        <button>Send</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-section">
+      <h4>Forge</h4>
+      <ul>
+        <li><a href="#">Meet Jax</a></li>
+        <li><a href="#">Our Mission</a></li>
+        <li><a href="#">Privacy & Ethics</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Support</h4>
+      <ul>
+        <li><a href="#">Help Center</a></li>
+        <li><a href="#">Mental Health Resources</a></li>
+        <li><a href="#">Emergency Contacts</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

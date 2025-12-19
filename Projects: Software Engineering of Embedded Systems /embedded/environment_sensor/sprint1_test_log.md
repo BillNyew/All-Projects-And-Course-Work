@@ -1,0 +1,11 @@
+| ID          | Description                     | Input Example                                                         | Expected Output / Behavior                                    |
+|----------------------|---------------------------------|-----------------------------------------------------------------------|---------------------------------------------------------------|
+| T-INPUT-01  | Start both sensors              | ```json{ "mtype": "environment_sensor.command", "from": "brain", "to": "environment_sensor1", "command": "start" }``` | Sensors resume normal reading for light and temperature      |
+| T-INPUT-02  | Stop temperature sensor         | ```json{ "mtype": "environment_sensor.command", "from": "brain", "to": "environment_sensor1", "command": "stop_temp" }``` | Temperature sensor stops reading; light sensor continues     |
+| T-INPUT-03  | Start temperature sensor only   | ```json{ "mtype": "environment_sensor.command", "from": "brain", "to": "environment_sensor1", "command": "start_temp" }``` | Temperature sensor resumes readings; light sensor unchanged  |
+| T-INPUT-04  | Start light sensor only         | ```json{ "mtype": "environment_sensor.command", "from": "brain", "to": "environment_sensor1", "command": "start_light" }``` | Light sensor resumes readings; temperature sensor unchanged  |
+| T-INPUT-05  | Stop both sensors               | ```json{ "mtype": "environment_sensor.command", "from": "brain", "to": "environment_sensor1", "command": "stop" }``` | Both sensors stop reading                                    |
+| T-INPUT-06  | Stop light sensor only          | ```json{ "mtype": "environment_sensor.command", "from": "brain", "to": "environment_sensor1", "command": "stop_light" }``` | Light sensor stops; temperature sensor continues              |
+| T-INPUT-07  | Get temperature status          | ```json{ "mtype": "environment_sensor.get_status", "from": "brain", "to": "environment_sensor1", "command": "temp_status" }``` | JSON status with current temperature in °C                    |
+| T-INPUT-08  | Get light status                | ```json{ "mtype": "environment_sensor.get_status", "from": "brain", "to": "environment_sensor1", "command": "light_status" }``` | JSON status with current light ADC value                      |
+

@@ -1,0 +1,43 @@
+// === Valid Ping Inputs (Expect pong response with incremented value and millis) ===
+{"mtype":"ping","value":0}
+{"mtype":"ping","value":1}
+{"mtype":"ping","value":42}
+
+// === Deserialization Error (Malformed JSON) ===
+{mtype:"ping",value:1}
+This is not JSON!
+{"mtype":"ping","value":}
+
+// === Missing mtype Field ===
+{"value":5}
+
+// === mtype not equal to "ping" ===
+{"mtype":"hello","value":5}
+{"mtype":"pong","value":1}
+
+// === Missing value Field ===
+{"mtype":"ping"}
+
+// === value is not an integer ===
+{"mtype":"ping","value":"abc"}
+{"mtype":"ping","value":null}
+{"mtype":"ping","value":true}
+
+
+# Malformed JSON
+
+{"cmd": "ping"
+
+# Null command field
+
+{"cmd": null}
+
+# Completely unrelated JSON
+
+{"sensor": "gps", "time": 123456}
+
+# Command with newline-separated chunking (simulate serial input)
+
+{
+"cmd": "ping"
+}

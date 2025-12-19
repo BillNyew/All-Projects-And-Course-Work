@@ -1,0 +1,6 @@
+Connect 10kΩ resistor from microcontroller pin D6 to LED cathode 
+Connect LED anode to GND
+
+Connect red wire on sound sensor module to 5V
+Connect black wire on sound sensor module to GND
+Connect SIG pin to microcontroller pin D7 

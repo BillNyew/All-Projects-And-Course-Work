@@ -1,0 +1,1 @@
+C:\Users\nando\documents\virtualmachine\ui\target\debug\ui.exe: C:\Users\nando\documents\virtualmachine\bytecode_vm\src\compiler.rs C:\Users\nando\documents\virtualmachine\bytecode_vm\src\lib.rs C:\Users\nando\documents\virtualmachine\bytecode_vm\src\scanner.rs C:\Users\nando\documents\virtualmachine\ui\src\main.rs

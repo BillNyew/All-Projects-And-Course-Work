@@ -1,0 +1,3 @@
+The software module will set the initial state of the door to be closed or open and how fast it should close / open. Next, 
+it will wait for an input message from the brain tell it to close or open the door. Once it receives this message, it will attempt to open or attempt to close, reporting any errors that occur with a message to the brain. Finally, it will send the new status 
+to the brain. 

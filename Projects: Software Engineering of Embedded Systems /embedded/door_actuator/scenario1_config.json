@@ -1,0 +1,7 @@
+{
+    "door_actuator": {
+        "threshold": 10,
+        "speed": "fast",
+        "direction": "open"
+    }
+}

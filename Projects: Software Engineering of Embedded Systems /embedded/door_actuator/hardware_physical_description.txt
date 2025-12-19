@@ -1,0 +1,8 @@
+Connect microcontroller to the board, powered through USB. 
+Connect SIG terminal(1) of potentiometer to D0
+Connect VCC terminal(2) of the potentiometer to 3.3V 
+Connect GND terminal(3) of the potentiometer to GND
+Connect PWM pin of servo motor to D1
+Connect positive terminal of servo motor to 3.3V 
+Connect negative terminal of servo motor to GND
+

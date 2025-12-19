@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Programs</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <a href="index.html" class="active"><img src="Forge_logo.png" alt="Forge Logo" class="logo-img" /></a>
+    </div>
+    <nav class="nav">
+      <a href="index.html" class="home-btn">Home</a>
+      <a href="features.html">Features</a>
+      <a href="investor.html">Investors</a>
+      <a href="comingsoon.html">Coming Soon</a>
+      <a href="subscription.html">Subscription</a>
+      <a href="login.html">Login</a>
+    </nav>
+    
+  </header>
+<!-- HERO SECTION -->
+
+<section class="hero hero-programs">
+  <div class="hero-bg"></div>
+ 
+  <div class="hero-slogan">
+    <span class="hero-forge">FORGE</span>
+    <span class="hero-subtext">Programs for Men. Built by Men.</span>
+  </div>
+  <p>
+    Forge programs are tailored for men, especially veterans, who face unique mental health challenges and deserve real, practical support. Build resilience, process stress, and find community—at your pace, on your terms.
+  </p>
+  <a href="#" class="btn-primary btn-on-primary" id="startJaxChat">Start Talking to Jax</a>
+
+</section>
+
+<!-- PROGRAMS OVERVIEW -->
+<section class="long-section">
+  <h2>Personalized Programs Powered by AI</h2>
+  <p>
+    Each program is guided by Jax, your AI mental wellness companion, and designed for real-world struggles faced by men:
+  </p>
+  <ul>
+    <li><strong>Foundations of Mental Strength:</strong> Understand stress, build healthy routines, break cycles of silence.</li>
+    <li><strong>Resilience Through Change:</strong> Tackle life transitions, civilian reintegration, and major setbacks.</li>
+    <li><strong>Managing Burnout and Fatigue:</strong> Recognize warning signs, develop coping strategies, boost energy.</li>
+    <li><strong>Improving Confidence and Self-Worth:</strong> Address shame, build self-respect, overcome negative self-talk.</li>
+  </ul>
+  <p>
+    <strong>How it works:</strong> Programs are interactive, self-paced, and use AI to adapt content, provide reminders, and connect you with community resources or therapists if needed.
+  </p>
+</section>
+
+<!-- JOURNEY MAP / VISUAL FLOW (Can be an image or steps) -->
+<section class="long-section alt-bg">
+  <h2>How a Program Works</h2>
+  <ol>
+    <li><strong>Step 1:</strong> Choose a focus—stress, transition, burnout, or confidence.</li>
+    <li><strong>Step 2:</strong> Get a daily check-in with Jax (short prompt or mood self-check).</li>
+    <li><strong>Step 3:</strong> Work through short modules (video, article, reflection question, or quick exercise).</li>
+    <li><strong>Step 4:</strong> Track your progress—Jax reminds and motivates you.</li>
+    <li><strong>Step 5:</strong> (Optional) Join a men’s group, ask for therapist support, or stay anonymous and continue solo.</li>
+  </ol>
+</section>
+
+<!-- HEAD SPACE CHECK SECTION -->
+<section class="primary-section">
+  <h2>Head Space Check</h2>
+  <p>
+    A quick self-assessment for men: no stigma, no judgment—just a private check on how you’re feeling.
+  </p>
+  <form id="head-check-form">
+    <div class="slider-group">
+      <label for="stress">Stress (1–10)</label>
+      <input id="stress" name="stress" type="range" min="1" max="10" value="5" />
+      <div class="slider-values" id="stress-values"></div>
+    </div>
+    <div class="slider-group">
+      <label for="anxiety">Anxiety (1–10)</label>
+      <input id="anxiety" name="anxiety" type="range" min="1" max="10" value="5" />
+      <div class="slider-values" id="anxiety-values"></div>
+    </div>
+    <div class="slider-group">
+      <label for="mood">Overall Mood (1–10)</label>
+      <input id="mood" name="mood" type="range" min="1" max="10" value="5" />
+      <div class="slider-values" id="mood-values"></div>
+    </div>
+    <button type="submit" class="btn-primary btn-on-primary">Submit</button>
+  </form>
+  <div id="head-check-result" style="margin-top:20px; font-weight:600;"></div>
+</section>
+
+<!-- BENEFITS / OUTCOMES -->
+<section class="long-section">
+  <h2>Why Track Your Head Space?</h2>
+  <ul>
+    <li><strong>Preventative support:</strong> Men who check in weekly have 30% fewer severe episodes.</li>
+    <li><strong>Actionable insights:</strong> Get tips, community links, or therapist referrals based on your results.</li>
+    <li><strong>Track progress:</strong> Review your personal growth—privately, securely, and at your own pace.</li>
+  </ul>
+  <p style="font-size:0.95em; color: #aaa;">
+    <em>All data is private and only stored if you choose to save your history.</em>
+  </p>
+</section>
+
+<!-- OPTIONAL: USER STORIES / TESTIMONIALS -->
+<section class="primary-section">
+  <h2>Real Experiences</h2>
+  <blockquote>
+    “Jax’s daily check-ins kept me on track during my toughest months after leaving the military.”
+  </blockquote>
+  <blockquote>
+    “The programs helped me break out of a cycle of anger and stress. I wish I’d found this sooner.”
+  </blockquote>
+</section>
+
+<!-- CHAT MODAL (handled by script.js) -->
+<div class="chat-overlay" id="chatOverlay" style="display:none;">
+  <div class="chat-window">
+    <div class="chat-header">
+      <span class="logo">Forge</span>
+      <span class="chat-title">Chat with Jax</span>
+      <button class="close-chat" id="closeChatBtn">×</button>
+    </div>
+    <div class="chat-body">
+      <p>Hello! I'm <strong>Jax</strong>, your AI companion. What would you like to talk about today?</p>
+    </div>
+    <div class="chat-footer">
+      <input type="text" placeholder="Type a message..." />
+      <button>Send</button>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-section">
+    <h4>Forge</h4>
+    <ul>
+      <li><a href="#">Meet Jax</a></li>
+      <li><a href="#">Our Mission</a></li>
+      <li><a href="#">Privacy & Ethics</a></li>
+    </ul>
+  </div>
+  <div class="footer-section">
+    <h4>Support</h4>
+    <ul>
+      <li><a href="#">Help Center</a></li>
+      <li><a href="#">Mental Health Resources</a></li>
+      <li><a href="#">Emergency Contacts</a></li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>

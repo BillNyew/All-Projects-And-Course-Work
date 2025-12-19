@@ -1,0 +1,162 @@
+[
+  [
+    {
+      "mtype": "config",
+      "from": "some_unique_id",
+      "to": "scanning_laser_unique_id",
+      "name": "angular_resolution",
+      "value": 5
+    },
+    {
+      "mtype": "debug",
+      "to": "some_unique_id",
+      "from": "scanning_laser_unique_id",
+      "value": "Config angular_resolution has been set 5"
+    }
+  ],
+  [
+    {
+      "mtype": "config",
+      "from": "some_unique_id",
+      "to": "scanning_laser_unique_id",
+      "name": "sampling_rate",
+      "value": 10
+    },
+    {
+      "mtype": "debug",
+      "to": "some_unique_id",
+      "from": "scanning_laser_unique_id",
+      "value": "Config sampling_rate has been set 10"
+    }
+  ],
+  [
+    {
+      "mtype": "config",
+      "from": "some_unique_id",
+      "to": "scanning_laser_unique_id",
+      "name": "change_threshold",
+      "value": 20
+    },
+    {
+      "mtype": "debug",
+      "to": "some_unique_id",
+      "from": "scanning_laser_unique_id",
+      "value": "Config change_threshold has been set 20"
+    }
+  ],
+  [
+    {
+      "mtype": "config",
+      "from": "some_unique_id",
+      "to": "scanning_laser_unique_id",
+      "name": "smoothing_factor",
+      "value": 0.3
+    },
+    {
+      "mtype": "debug",
+      "to": "some_unique_id",
+      "from": "scanning_laser_unique_id",
+      "value": "Config smoothing_factor has been set 0.3"
+    }
+  ],
+  [
+    {
+      "mtype": "large",
+      "from": "some_unique_id",
+      "to": "scanning_laser_unique_id",
+      "name": "smoothing_factor",
+      "value": 0.3
+    },
+    {
+      "mtype": "error",
+      "to": "some_unique_id",
+      "from": "scanning_laser_unique_id",
+      "value": "Invalid mtype"
+    }
+  ],
+  [
+    {
+      "mtype": "config",
+      "to": "scanning_laser_unique_id",
+      "name": "smoothing_factor",
+      "value": 0.3
+    },
+    {
+      "mtype": "error",
+      "to": "*",
+      "from": "scanning_laser_unique_id",
+      "value": "Missing 'from' key"
+    }
+  ],
+  [
+    {
+      "mtype": "config",
+      "from": "some_unique_id",
+      "name": "smoothing_factor",
+      "value": 0.3
+    },
+    {
+      "mtype": "error",
+      "to": "*",
+      "from": "scanning_laser_unique_id",
+      "value": "Missing 'to' key"
+    }
+  ],
+  [
+    {
+      "from": "some_unique_id",
+      "to": "scanning_laser_unique_id",
+      "name": "smoothing_factor",
+      "value": 0.3
+    },
+    {
+      "mtype": "error",
+      "to": "*",
+      "from": "scanning_laser_unique_id",
+      "value": "Missing 'mtype' key"
+    }
+  ],
+  [
+    {
+      "mtype": "config",
+      "from": "some_unique_id",
+      "to": "scanning_laser_unique_id",
+      "name": "smoothing_factor"
+    },
+{
+  "mtype": "error",
+  "to": "some_unique_id",
+  "from": "scanning_laser_unique_id",
+  "value": "Invalid name and value pairs for config"
+}
+  ],
+    [
+    {
+      "mtype": "config",
+      "from": "some_unique_id",
+      "to": "scanning_laser_unique_id",
+      "value": 0.3
+    },
+  {
+  "mtype": "error",
+  "to": "some_unique_id",
+  "from": "scanning_laser_unique_id",
+  "value": "Invalid name and value pairs for config"
+}
+  ],
+  [
+    {
+      "mtype": "config",
+      "from": "some_unique_id",
+      "to": "other_unique_id",
+      "name": "smoothing_factor",
+      "value": 0.3
+    },
+    {
+    "mtype": "error",
+    "to": "some_unique_id",
+    "from": "scanning_laser_unique_id",
+    "value": "Invalid unique id"
+    }
+  ]
+]

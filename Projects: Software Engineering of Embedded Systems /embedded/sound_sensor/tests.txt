@@ -1,0 +1,144 @@
+warning threshold
+
+    t-config-01:
+    {mtype:"config", from:"does_not_matter", to:"sound_sensor", name:"warning_threshold_decibles", value:0}
+    tests min value
+    warning threshold decibles should change to the value
+
+    t-config-02:
+    {mtype:"config", from:"does_not_matter", to:"sound_sensor", name:"warning_threshold_decibles", value:300}
+    tests max value
+    warning threshold decibles should change to the value
+
+    t-config-03:
+    {mtype:"config", from:"does_not_matter", to:"sound_sensor", name:"warning_threshold_decibles", value:"0"}
+    tests incorrect data type for the value
+    error should be printed to serial monitor and value should not change
+
+    t-config-04:
+    {mtype:"config", from:"does_not_matter", to:"sound_sensor", name:"warning_threshold_decibles", value: -45}
+    tests out of bounds value below
+    error should be printed to the serial monitor and value should not change
+    
+    t-config-05:
+    {mtype:"config", from:"does_not_matter", to:"sound_sensor", name:"warning_threshold_decibles", value: 500}
+    tests out of bounds value above
+    error should be printed to the serial monitor and value should not change
+
+baseline broadcast rate
+
+    t-config-06:
+    {mtype:"config", from:"does_not_matter", to:"sound_sensor", name:"baseline_broadcast_rate_ms", value:-25}
+    tests invalid value (too small)
+    should not change the broadcast rate
+
+    t-config-07:
+    {mtype:"config", from:"does_not_matter", to:"sound_sensor", name:"baseline_broadcast_rate_ms", value: 100000}
+    tests invalid value (too large)
+    should not change the broadcast rate. 
+
+    t-config-08:
+    {mtype:"config", from:"does_not_matter", to:"sound_sensor", name:"baseline_broadcast_rate_ms", value:"3000"}
+    tests incorrect type for value
+    should not change the broadcast rate
+
+listen rate:
+    t-config-09:
+    {mtype:"config", from:"does_not_matter", to:"sound_sensor", name:"listen_rate_ms", value:20}
+    tests min value
+    value should change
+
+    t-config-10:
+    {mtype:"config", from:"does_not_matter", to:"sound_sensor", name:"listen_rate_ms", value:100}
+    tests max value
+    value should change
+
+    t-config-11:
+    {mtype:"config", from:"does_not_matter", to:"sound_sensor", name:"listen_rate_ms", value:"50"}
+    tests incorrect data type for the value
+    value should not change
+
+    t-config-12:
+    {mtype:"config", from:"does_not_matter", to:"sound_sensor", name:"listen_rate_ms", value: 0}
+    tests out of bounds value
+    value should not change 
+
+    t-config-13:
+    {mtype:"config", from:"does_not_matter", to:"sound_sensor", name:"listen_rate_ms", value: 500}
+
+    tests out of bounds value (too large)
+    value should not change
+
+listen time
+
+    t-config-14:
+    {mtype:"config", from:"does_not_matter", to:"sound_sensor", name:"listen_time_ms", value:5}
+    tests min value
+    value should change
+
+    t-config-15:
+    {mtype:"config", from:"does_not_matter", to:"sound_sensor", name:"listen_time_ms", value:10}
+    tests max value
+    value should change 
+
+    t-config-16:
+    {mtype:"config", from:"does_not_matter", to:"sound_sensor", name:"listen_time_ms", value:"5"}
+    tests incorrect data type for the value
+    value should not change
+
+    t-config-17:
+    {mtype:"config", from:"does_not_matter", to:"sound_sensor", name:"listen_time_ms", value: 3}
+    
+    tests out of bounds value
+    value should not change
+
+    t-config-18:
+    {mtype:"config", from:"does_not_matter", to:"sound_sensor", name:"listen_time_ms", value: 11}
+
+    tests out of bounds value (too large)
+    value should not change
+
+input message test cases
+
+    t-input-1:
+    tests that sound-sensor.start command works
+    sensor should start reading
+    {mtype:"sound-sensor.start", from:"...", to:"sound_sensor" }
+
+    t-input-2:
+    tests that the sound-sensor.stop command works
+    sensor should stop reading
+    {mtype:"sound-sensor.stop", from:"...", to:"sound_sensor" }
+
+    t-input-3:
+    tests that sound sensor does not interpret commands that are not meant for it
+    sensor should not start or stop
+    {mtype:"sound-sensor.stop", from:"...", to:"brain" }
+
+error handling test cases
+
+    t-error-1:
+    tests that malformed json is properly handled
+    nothing will happen, no values will change. json serialization error will be printed to the Serial monitor
+    {mtype:"sound-sensor.stop", from:"...", to:"sound_sensor"
+
+    t-error-2:
+    {mtype:"config", from:"does_not_matter", to:"sound_sensor", value: 11}
+
+    tests that name is not missing 
+    Should not change anything
+    t-error-3:
+
+    tests that mtype is not missing 
+    Should not change anything
+    {from:"does_not_matter", to:"sound_sensor", name:"listen_time_ms", value: 11}
+
+    t-error-4:
+    tests that message is being sent to the sound sensor 
+    Should not change anything
+    {mtype:"config", from:"does_not_matter", to:"brain", name:"listen_time_ms", value: 11}
+
+    t-error-5:
+    tests that value is not missing 
+    Should not change anything
+    {mtype:"config", from:"does_not_matter", to:"sound-sensor", name:"listen_time_ms"}
