@@ -34,6 +34,6 @@ Whether it’s a solo project or group work, I always strive for clean, maintain
 Feel free to explore my repository, star what you like, and reach out if you'd like to collaborate or chat!
 
 - 💼 [LinkedIn](www.linkedin.com/in/bill-turbadrakh-77260828a) 
-- 📧 Email: *bill9turbo@yahoo.com* 
+- 📧 Email: *bill.turbadrakh@gmail.com* 
 ---
 Thanks for stopping by! 🙌
